@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .main {
+            display: grid;
+            grid-template-columns: repeat(7, 2cm); 
+            grid-template-rows: auto; 
+            gap: 10px;
+        }
+
+      
+        .logo {
+            background-color: red;
+            color: white;
+            grid-row: span 4; 
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            writing-mode: vertical-rl; 
+            transform: rotate(180deg); 
+        }
+
+      
+        .two {
+            background-color: blue;
+            color: white;
+            grid-column: span 5; 
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .twenty-one {
+            background-color: lightgreen;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+          
+        .numbers {
+            background-color: lightgray;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .navigation {
+            background-color: orange;
+            color: white;
+            grid-row: span 2; 
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg); 
+        }
+
+       
+        .content, .folder {
+            background-color: lightblue;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="logo">Logo</div>
+        <div class="two">2</div>
+        <div class="twenty-one">21</div>
+        <div class="numbers">3</div>
+        <div class="numbers">4</div>
+        <div class="numbers">5</div>
+        <div class="numbers">6</div>
+        <div class="numbers">7</div>
+        <div class="numbers">8</div>
+        <div class="navigation">Navigation</div>
+        <div class="content">Content</div>
+        <div class="folder">Folder</div>
+    </div>
+</body>
+</html>
